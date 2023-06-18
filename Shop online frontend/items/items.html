@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lazapee</title>
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.15.3-web/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="header">
+            <ul class="menu">
+                <li>
+                     <a class="menu__item" href="../home.html">trang chủ </a>
+                </li>
+                <li>
+                    <a class="menu__item" href="../addProduct/newProduct.html">Tạo mới sản phẩm</a>
+                </li>
+                <li> 
+                    <a class="menu__item" href="#">Danh sách sản phẩm</a>
+                </li>
+                <li> <a class="menu__item" href="#">tin tức</a>
+                    <ul class="subnav">
+                        <li>
+                            <a href="">lưu trữ</a>
+                        </li>
+                        <li>
+                            <a href="">bài đăng đơn</a>
+                        </li>
+                    </ul>
+                </li>
+                <li> <a class="menu__item" href="#">liên hệ</a>
+                    <ul class="subnav">
+                        <li>
+                            <a href="">liên hệ 1</a>
+                        </li>
+                        <li>
+                            <a href="">liên hệ 2</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="menu--right"> 
+            </ul>
+            <!-- <div>
+                <i class="icon ti-menu"></i>
+            </div> -->
+        </div>
+
+        <div class="app__container">
+            <div class="grid wide">
+                <div class ="row small-gutter app__content">
+                    <div class="col l-2 m-0 s-0">
+                        <div class="category hide-on-mobile">
+                            <h3 class="category__heading">
+                                <i class="category__heading-icon fas fa-list-ul"></i>
+                                Danh mục
+                            </h3>
+            
+                            <ul class="category__list">
+                                <li class="category__item category__item--active">
+                                    <a href="" class="category__item-link">Trang điểm mặt</a>
+                                </li>
+                                <li class="category__item">
+                                    <a href="" class="category__item-link">Trang điểm môi</a>
+                                </li>
+                                <li class="category__item">
+                                    <a href="" class="category__item-link">Trang điểm mắt</a>
+                                </li>
+                                <li class="category__item">
+                                    <a href="" class="category__item-link">Kem dưỡng da</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+    
+                    <div class="col l-10 m-12 s-12">
+                        <div class="home-filter hide-on-mobile-tablet">
+                            <span class="home-filter__label">Sắp xếp theo</span>
+                            <button class="btn home-filter__btn">Phổ biến</button>
+                            <button class="btn home-filter__btn btn--primary">Mới nhất</button>
+                            <button class="btn home-filter__btn">Bán chạy</button>
+                            <div class="select-input">
+                                <span class="select-input__label">Giá</span>
+                                <i class="select-input__icon fas fa-angle-down"></i>
+
+                                <ul class="select-input__sublable">
+                                    <li class="selec-input__sublable-item">
+                                        <a href="" class="selec-input__sublable-link">Giá: Thấp đến cao</a>
+                                    </li>
+                                    <li class="selec-input__sublable-item">
+                                        <a href="" class="selec-input__sublable-link">Giá: Cao đến thấp</a>
+                                    </li>
+                                </ul>
+                            </div>
+    
+                            <div class="home-filter__page">
+                                <span class="home-filter__page-num">
+                                    <span class="home-filter__page-current">1</span>/<span 
+                                    class="home-filter__page-total">14</span>
+                                </span>
+
+                                <div class="home-filter__page-control">
+                                    <a href="" class="home-filter__page-btn page-btn--disable">
+                                        <i class="home-filter__page-icon fas fa-chevron-left"></i>
+                                    </a>
+                                    <a href="" class="home-filter__page-btn">
+                                        <i class="home-filter__page-icon fas fa-chevron-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <nav class="mobile__category">
+                            <ul class="mobile__category-list">
+                                <li class="mobile__category-item">
+                                    <a href="" class="mobile__category-link">Linh kiện máy tính Linh kiện máy tính</a>
+                                </li>
+                                <li class="mobile__category-item">
+                                    <a href="" class="mobile__category-link">Thiết bị mạng & văn phòng</a>
+                                </li>
+                                <li class="mobile__category-item">
+                                    <a href="" class="mobile__category-link">Gaming gear</a>
+                                </li>
+                                <li class="mobile__category-item">
+                                    <a href="" class="mobile__category-link">Linh kiện máy tính</a>
+                                </li>
+                                <li class="mobile__category-item">
+                                    <a href="" class="mobile__category-link">Thiết bị mạng & văn phòng</a>
+                                </li>
+                                <li class="mobile__category-item">
+                                    <a href="" class="mobile__category-link">Gaming gear</a>
+                                </li>
+                                <li class="mobile__category-item">
+                                    <a href="" class="mobile__category-link">Linh kiện máy tính</a>
+                                </li>
+                                <li class="mobile__category-item">
+                                    <a href="" class="mobile__category-link">Thiết bị mạng & văn phòng</a>
+                                </li>
+                                <li class="mobile__category-item">
+                                    <a href="" class="mobile__category-link">Gaming gear</a>
+                                </li>
+                                <li class="mobile__category-item">
+                                    <a href="" class="mobile__category-link">Linh kiện máy tính</a>
+                                </li>
+                                <li class="mobile__category-item">
+                                    <a href="" class="mobile__category-link">Thiết bị mạng & văn phòng</a>
+                                </li>
+                                <li class="mobile__category-item">
+                                    <a href="" class="mobile__category-link">Gaming gear</a>
+                                </li>
+                            </ul>
+                        </nav>
+
+                        <div class="home-product">
+                            <div class ="row small-gutter list_item">
+                                <!-- product item -->
+                                <!-- <div class="col l-2-4 m-4 s-6">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item__img" style="background-image: url(./assets/img/container/product/img1.jpg);"></div>
+                                        <h4 class="home-product-item__name">ASUS Republic of Gamers Swift PG35VQ 35" Curved 200 Hz G-SYNC VA Gaming Monitor</h4>
+                                        <div class="home-product-item__price">
+                                            <span class="item__price--old">45.997.990 đ</span>
+                                            <span class="item__price--current">9.990.000 đ</span>
+                                        </div>
+
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like liked">
+                                                <i class="home-product__like-icon--empty far fa-heart"></i>
+                                                <i class="home-product__like-icon--fill fas fa-heart"></i>
+                                            </span>
+
+                                            <div class="home-product-item__rate">
+                                                <i class="rate--star-gold fas fa-star"></i>
+                                                <i class="rate--star-gold fas fa-star"></i>
+                                                <i class="rate--star-gold fas fa-star"></i>
+                                                <i class="rate--star-gold fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">Asus</span>
+                                            <Span class="home-product-item__region">Đài Loan</Span>
+                                        </div>
+
+                                        <div class="home-product-item__favourite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off--percent">28%</span>
+                                            <span class="home-product-item__sale-off--label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col l-2-4 m-4 s-6">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item__img" style="background-image: url(./assets/img/container/product/img1.jpg);"></div>
+                                        <h4 class="home-product-item__name">ASUS Republic of Gamers Swift PG35VQ 35" Curved 200 Hz G-SYNC VA Gaming Monitor</h4>
+                                        <div class="home-product-item__price">
+                                            <span class="item__price--old">45.997.990 đ</span>
+                                            <span class="item__price--current">9.990.000 đ</span>
+                                        </div>
+
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like liked">
+                                                <i class="home-product__like-icon--empty far fa-heart"></i>
+                                                <i class="home-product__like-icon--fill fas fa-heart"></i>
+                                            </span>
+
+                                            <div class="home-product-item__rate">
+                                                <i class="rate--star-gold fas fa-star"></i>
+                                                <i class="rate--star-gold fas fa-star"></i>
+                                                <i class="rate--star-gold fas fa-star"></i>
+                                                <i class="rate--star-gold fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">Asus</span>
+                                            <Span class="home-product-item__region">Đài Loan</Span>
+                                        </div>
+
+                                        <div class="home-product-item__favourite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off--percent">28%</span>
+                                            <span class="home-product-item__sale-off--label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col l-2-4 m-4 s-6">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item__img" style="background-image: url(./assets/img/container/product/img1.jpg);"></div>
+                                        <h4 class="home-product-item__name">ASUS Republic of Gamers Swift PG35VQ 35" Curved 200 Hz G-SYNC VA Gaming Monitor</h4>
+                                        <div class="home-product-item__price">
+                                            <span class="item__price--old">45.997.990 đ</span>
+                                            <span class="item__price--current">9.990.000 đ</span>
+                                        </div>
+
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like liked">
+                                                <i class="home-product__like-icon--empty far fa-heart"></i>
+                                                <i class="home-product__like-icon--fill fas fa-heart"></i>
+                                            </span>
+
+                                            <div class="home-product-item__rate">
+                                                <i class="rate--star-gold fas fa-star"></i>
+                                                <i class="rate--star-gold fas fa-star"></i>
+                                                <i class="rate--star-gold fas fa-star"></i>
+                                                <i class="rate--star-gold fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">Asus</span>
+                                            <Span class="home-product-item__region">Đài Loan</Span>
+                                        </div>
+
+                                        <div class="home-product-item__favourite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off--percent">28%</span>
+                                            <span class="home-product-item__sale-off--label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col l-2-4 m-4 s-6">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item__img" style="background-image: url(./assets/img/container/product/img1.jpg);"></div>
+                                        <h4 class="home-product-item__name">ASUS Republic of Gamers Swift PG35VQ 35" Curved 200 Hz G-SYNC VA Gaming Monitor</h4>
+                                        <div class="home-product-item__price">
+                                            <span class="item__price--old">45.997.990 đ</span>
+                                            <span class="item__price--current">9.990.000 đ</span>
+                                        </div>
+
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like liked">
+                                                <i class="home-product__like-icon--empty far fa-heart"></i>
+                                                <i class="home-product__like-icon--fill fas fa-heart"></i>
+                                            </span>
+
+                                            <div class="home-product-item__rate">
+                                                <i class="rate--star-gold fas fa-star"></i>
+                                                <i class="rate--star-gold fas fa-star"></i>
+                                                <i class="rate--star-gold fas fa-star"></i>
+                                                <i class="rate--star-gold fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">Asus</span>
+                                            <Span class="home-product-item__region">Đài Loan</Span>
+                                        </div>
+
+                                        <div class="home-product-item__favourite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off--percent">28%</span>
+                                            <span class="home-product-item__sale-off--label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col l-2-4 m-4 s-6">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item__img" style="background-image: url(./assets/img/container/product/img1.jpg);"></div>
+                                        <h4 class="home-product-item__name">ASUS Republic of Gamers Swift PG35VQ 35" Curved 200 Hz G-SYNC VA Gaming Monitor</h4>
+                                        <div class="home-product-item__price">
+                                            <span class="item__price--old">45.997.990 đ</span>
+                                            <span class="item__price--current">9.990.000 đ</span>
+                                        </div>
+
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like liked">
+                                                <i class="home-product__like-icon--empty far fa-heart"></i>
+                                                <i class="home-product__like-icon--fill fas fa-heart"></i>
+                                            </span>
+
+                                            <div class="home-product-item__rate">
+                                                <i class="rate--star-gold fas fa-star"></i>
+                                                <i class="rate--star-gold fas fa-star"></i>
+                                                <i class="rate--star-gold fas fa-star"></i>
+                                                <i class="rate--star-gold fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">Asus</span>
+                                            <Span class="home-product-item__region">Đài Loan</Span>
+                                        </div>
+
+                                        <div class="home-product-item__favourite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off--percent">28%</span>
+                                            <span class="home-product-item__sale-off--label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col l-2-4 m-4 s-6">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item__img" style="background-image: url(./assets/img/container/product/img1.jpg);"></div>
+                                        <h4 class="home-product-item__name">ASUS Republic of Gamers Swift PG35VQ 35" Curved 200 Hz G-SYNC VA Gaming Monitor</h4>
+                                        <div class="home-product-item__price">
+                                            <span class="item__price--old">45.997.990 đ</span>
+                                            <span class="item__price--current">9.990.000 đ</span>
+                                        </div>
+
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like liked">
+                                                <i class="home-product__like-icon--empty far fa-heart"></i>
+                                                <i class="home-product__like-icon--fill fas fa-heart"></i>
+                                            </span>
+
+                                            <div class="home-product-item__rate">
+                                                <i class="rate--star-gold fas fa-star"></i>
+                                                <i class="rate--star-gold fas fa-star"></i>
+                                                <i class="rate--star-gold fas fa-star"></i>
+                                                <i class="rate--star-gold fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">Asus</span>
+                                            <Span class="home-product-item__region">Đài Loan</Span>
+                                        </div>
+
+                                        <div class="home-product-item__favourite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off--percent">28%</span>
+                                            <span class="home-product-item__sale-off--label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col l-2-4 m-4 s-6">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item__img" style="background-image: url(./assets/img/container/product/img1.jpg);"></div>
+                                        <h4 class="home-product-item__name">ASUS Republic of Gamers Swift PG35VQ 35" Curved 200 Hz G-SYNC VA Gaming Monitor</h4>
+                                        <div class="home-product-item__price">
+                                            <span class="item__price--old">45.997.990 đ</span>
+                                            <span class="item__price--current">9.990.000 đ</span>
+                                        </div>
+
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like liked">
+                                                <i class="home-product__like-icon--empty far fa-heart"></i>
+                                                <i class="home-product__like-icon--fill fas fa-heart"></i>
+                                            </span>
+
+                                            <div class="home-product-item__rate">
+                                                <i class="rate--star-gold fas fa-star"></i>
+                                                <i class="rate--star-gold fas fa-star"></i>
+                                                <i class="rate--star-gold fas fa-star"></i>
+                                                <i class="rate--star-gold fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">Asus</span>
+                                            <Span class="home-product-item__region">Đài Loan</Span>
+                                        </div>
+
+                                        <div class="home-product-item__favourite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off--percent">28%</span>
+                                            <span class="home-product-item__sale-off--label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col l-2-4 m-4 s-6">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item__img" style="background-image: url(./assets/img/container/product/img1.jpg);"></div>
+                                        <h4 class="home-product-item__name">ASUS Republic of Gamers Swift PG35VQ 35" Curved 200 Hz G-SYNC VA Gaming Monitor</h4>
+                                        <div class="home-product-item__price">
+                                            <span class="item__price--old">45.997.990 đ</span>
+                                            <span class="item__price--current">9.990.000 đ</span>
+                                        </div>
+
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like liked">
+                                                <i class="home-product__like-icon--empty far fa-heart"></i>
+                                                <i class="home-product__like-icon--fill fas fa-heart"></i>
+                                            </span>
+
+                                            <div class="home-product-item__rate">
+                                                <i class="rate--star-gold fas fa-star"></i>
+                                                <i class="rate--star-gold fas fa-star"></i>
+                                                <i class="rate--star-gold fas fa-star"></i>
+                                                <i class="rate--star-gold fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">Asus</span>
+                                            <Span class="home-product-item__region">Đài Loan</Span>
+                                        </div>
+
+                                        <div class="home-product-item__favourite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off--percent">28%</span>
+                                            <span class="home-product-item__sale-off--label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col l-2-4 m-4 s-6">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item__img" style="background-image: url(./assets/img/container/product/img1.jpg);"></div>
+                                        <h4 class="home-product-item__name">ASUS Republic of Gamers Swift PG35VQ 35" Curved 200 Hz G-SYNC VA Gaming Monitor</h4>
+                                        <div class="home-product-item__price">
+                                            <span class="item__price--old">45.997.990 đ</span>
+                                            <span class="item__price--current">9.990.000 đ</span>
+                                        </div>
+
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like liked">
+                                                <i class="home-product__like-icon--empty far fa-heart"></i>
+                                                <i class="home-product__like-icon--fill fas fa-heart"></i>
+                                            </span>
+
+                                            <div class="home-product-item__rate">
+                                                <i class="rate--star-gold fas fa-star"></i>
+                                                <i class="rate--star-gold fas fa-star"></i>
+                                                <i class="rate--star-gold fas fa-star"></i>
+                                                <i class="rate--star-gold fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">Asus</span>
+                                            <Span class="home-product-item__region">Đài Loan</Span>
+                                        </div>
+
+                                        <div class="home-product-item__favourite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off--percent">28%</span>
+                                            <span class="home-product-item__sale-off--label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div> -->
+                            </div>
+                        </div>
+
+                        <ul class="pagination home-pagination">
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">
+                                    <i class="pagination-icon fas fa-chevron-left"></i>
+                                </a>
+                            </li>
+                            <li class="pagination-item pagination-item-active">
+                                <a href="" class="pagination-item__link">1</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">2</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">3</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">4</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">5</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">...</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">14</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">
+                                    <i class="pagination-icon fas fa-chevron-right"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="grid wide">
+                <div class ="row">
+                    <div class="col l-2-4 m-4 s-6">
+                        <h3 class="footer__heading">Chăm sóc khách hàng</h3>
+                        <ul class="footer__list">
+                            <li class="footer__list-item">
+                                <a href="" class="footer__item-link">Trung tâm trợ giúp</a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a href="" class="footer__item-link">Shopee Mall</a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a href="" class="footer__item-link">Hướng dẫn mua hàng</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col l-2-4 m-4 s-6">
+                        <h3 class="footer__heading">Giới thiệu</h3>
+                        <ul class="footer__list">
+                            <li class="footer__list-item">
+                                <a href="" class="footer__item-link">Giới thiệu về Shopee</a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a href="" class="footer__item-link">Tuyển dụng</a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a href="" class="footer__item-link">Điều khoản</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col l-2-4 m-4 s-6">
+                        <h3 class="footer__heading">Danh mục</h3>
+                        <ul class="footer__list">
+                            <li class="footer__list-item">
+                                <a href="" class="footer__item-link">Đồ công nghệ</a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a href="" class="footer__item-link">Thời trang</a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a href="" class="footer__item-link">Mĩ phẩm</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col l-2-4 m-4 s-6">
+                        <h3 class="footer__heading">Theo dõi</h3>
+                        <ul class="footer__list">
+                            <li class="footer__list-item">
+                                <a href="" class="footer__item-link">
+                                    <i class="footer__social-icon fab fa-facebook-f"></i>
+                                    Facebook
+                                </a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a href="" class="footer__item-link">
+                                    <i class="footer__social-icon fab fa-instagram"></i>
+                                    Instagram
+                                </a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a href="" class="footer__item-link">
+                                    <i class="footer__social-icon fab fa-linkedin-in"></i>
+                                    LinkIn
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col l-2-4 m-4 s-12">
+                        <h3 class="footer__heading">Cửa hàng trên ứng dụng</h3>
+                        <div class="footer__download">
+                            <img class="footer__download-qr" src="./assets/img/header/qr_code.png" alt="">
+                            <div class="footer__download-app">
+                                <a class="footer__download-link" href="">
+                                    <img class="footer__download-img" src="./assets/img/header/google_play.png" alt="">
+                                </a>
+                                <a class="footer__download-link" href="">
+                                    <img class="footer__download-img" src="./assets/img/header/app_store.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </footer>
+    </div>
+
+    <!-- modal -->
+    <!-- <div class="modal">
+        <div class="modal__overlay"></div>
+
+        <div class="modal__body">
+            register form
+            <div class="auth-form">
+                <div class="auth-form__container">
+                    <div class="auth-form__header">
+                        <h3 class="auth-form__heaeding">Đăng ký</h3>
+                        <span class="auth-form__switch-btn">Đăng nhập</span>
+                    </div>
+
+                    <div class="auth-form__form">
+                        <div class="auth-form__group">
+                            <input type="email" class="auth-form__input" placeholder="Email của bạn">
+                        </div>
+                        <div class="auth-form__group">
+                            <input type="text" class="auth-form__input" placeholder="Mật khẩu của bạn">
+                        </div>
+                        <div class="auth-form__group">
+                            <input type="text" class="auth-form__input" placeholder="Nhập lại mật khẩu">
+                        </div>
+                    </div>
+
+                    <div class="auth-form__aside">
+                        <p class="auth-form__policy-text">
+                            Bằng việc đăng ký, bạn đã đồng ý với Shopee về
+                            <a href="" class="auth-form__text-link"> Điều khoản dịch vụ </a>&
+                            <a href="" class="auth-form__text-link"> Chính sách bảo mật</a>
+                        </p>
+                    </div>
+
+                    <div class="auth-form__controls">
+                        <button class="btn auth-form__controls-back btn-normal">TRỞ LẠI</button>
+                        <button class="btn btn--primary">ĐĂNG KÝ</button>
+                    </div>
+                </div>
+
+                <div class="auth-form__socials">
+                    <a href="" class="btn btn--with-icon btn--with-icon-facebook">
+                        <i class="fab fa-facebook-square"></i>
+                        <span>Kết nối với Facebook</span>
+                    </a>
+
+                    <a href="" class="btn btn--with-icon btn--with-icon-google">
+                        <i class="fab fa-google"></i>
+                        <span>Kết nối với Google</span>
+                    </a>
+                </div>
+            </div>
+
+            login form
+            <div class="auth-form">
+                <div class="auth-form__container">
+                    <div class="auth-form__header">
+                        <h3 class="auth-form__heaeding">Đăng nhập</h3>
+                        <span class="auth-form__switch-btn">Đăng ký</span>
+                    </div>
+
+                    <div class="auth-form__form">
+                        <div class="auth-form__group">
+                            <input type="email" class="auth-form__input" placeholder="Email của bạn">
+                        </div>
+                        <div class="auth-form__group">
+                            <input type="text" class="auth-form__input" placeholder="Mật khẩu của bạn">
+                        </div>
+                    </div>
+
+                    <div class="auth-form__help">
+                        <a href="" class="auth-form__link auth-form__forgot">Quên mật khẩu</a>
+                        <a href="" class="auth-form__link">Cần trợ giúp?</a>
+                    </div>
+
+                    <div class="auth-form__controls">
+                        <button class="btn auth-form__controls-back btn-normal">TRỞ LẠI</button>
+                        <button class="btn btn--primary">ĐĂNG NHẬP</button>
+                    </div>
+                </div>
+
+                <div class="auth-form__socials">
+                    <a href="" class="btn btn--with-icon btn--with-icon-facebook">
+                        <i class="fab fa-facebook-square"></i>
+                        <span>Kết nối với Facebook</span>
+                    </a>
+
+                    <a href="" class="btn btn--with-icon btn--with-icon-google">
+                        <i class="fab fa-google"></i>
+                        <span>Kết nối với Google</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>  -->
+</body>
+
+<script src="./assets/js/data.js"></script>
+
+</html>
